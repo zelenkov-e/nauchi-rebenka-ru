@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://nauchi-rebenka.ru
+
+# Sitemaps
+Sitemap: https://nauchi-rebenka.ru/sitemap.xml
