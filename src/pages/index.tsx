@@ -68,6 +68,12 @@ export default function Home() {
   const router = useRouter();
 
   const handleClick = (path: string) => {
+    const eventName = path.replace(/^\//, "");
+
+    if (typeof window !== "undefined" && (window as any).umami) {
+      (window as any).umami.track(eventName);
+    }
+
     router.push(path);
   };
 
